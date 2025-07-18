@@ -2,8 +2,6 @@
 
 run:
   timeout: 5m
-  skip-dirs:
-    - vendor
 
 linters:
   disable:
