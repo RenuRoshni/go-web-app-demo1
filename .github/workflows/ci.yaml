@@ -39,10 +39,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
 
-    - name: Run golangci-lint
+    - name: Run golangci-lint with custom config
       uses: golangci/golangci-lint-action@v6
       with:
-        version: v1.58.2
+        version: v1.58.2  # or latest available
+        args: --config=.golangci.yml
   
   push:
     runs-on: ubuntu-latest

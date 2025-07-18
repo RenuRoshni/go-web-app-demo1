@@ -1,0 +1,26 @@
+# .golangci.yml
+
+run:
+  timeout: 5m
+  skip-dirs:
+    - vendor
+
+linters:
+  disable:
+    - goanalysis_metalinter
+    - govet
+    - staticcheck
+    - unused
+    - typecheck
+
+  enable:
+    - errcheck
+    - gosimple
+    - ineffassign
+    - revive
+
+linters-settings:
+  errcheck:
+    exclude-functions:
+      - fmt.Fprintf
+      - fmt.Printf
