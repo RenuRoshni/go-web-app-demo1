@@ -20,7 +20,7 @@ This project demonstrates a complete DevOps pipeline for deploying a Go web appl
 
 ## Architecture Workflow
 
-![DevOps Workflow]()
+![DevOps Workflow](https://github.com/RenuRoshni/go-web-app-demo1/blob/main/screenshots/Screenshot%202025-07-21%20222357.png)
 
 This diagram represents the complete DevOps flow — from source code to live deployment in EKS via CI/CD tools and GitOps.
 
@@ -57,7 +57,7 @@ docker push <your-docker-username>/go-web-app
 
 Below is the Argo CD dashboard confirming the successful deployment of the application:
 
-![Argo CD Sync]()
+![Argo CD Sync](https://github.com/RenuRoshni/go-web-app-demo1/blob/main/screenshots/Screenshot%202025-07-18%20204540.png)
 
 ---
 
